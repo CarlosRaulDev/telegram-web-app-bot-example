@@ -1,49 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="MobileOptimized" content="176" />
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="robots" content="noindex,nofollow" />
-    <title></title>
-    <script src="https://telegram.org/js/telegram-web-app.js?1"></script>
-    <script>
-        function setThemeClass() {
-            document.documentElement.className = Telegram.WebApp.colorScheme;
+<html lang= "es">
+<cabeza>
+    <meta juego de caracteres= "utf-8">
+    <meta Nombre= "puerto de observación"
+          contenido= "ancho = ancho del dispositivo, escala inicial = 1.0, escala mínima = 1.0, escala máxima = 1.0, escalable por el usuario = No"/>
+    <meta Nombre= "detección de formato" contenido= "teléfoNo = No"/>
+    <meta http-equiv= "Compatible con X-UA" contenido= "IE = borde"/>
+    <meta Nombre= "MobileOptimized" contenido= "176"/>
+    <meta Nombre= "HandheldFriendly" contenido= "Cierto"/>
+    <meta Nombre= "robots" contenido= "Noindex, Nofollow"/>
+    <título></título>
+    <guión src= "https://telegram.org/js/telegram-web-app.js?1 "></guión >
+    <guión >
+        función setThemeClass() {
+ documento.documentElement.className = Telegrama.WebApp.colorScheme;
         }
-        Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+ Telegrama.WebApp.en evento('themeChanged', setTemeclass);
         setThemeClass();
-    </script>
-    <style>
-        body {
-            --bg-color: var(--tg-theme-bg-color, #fff);
+    </guión >
+    <h1>AppWeb</h1>
+    <estilo>
+ cuerpo {
+ --bg-color : var(--tg-theme-bg-color, #fff);
             font-family: sans-serif;
-            background-color: var(--bg-color);
-            color: var(--tg-theme-text-color, #222);
-            font-size: 14px;
-            margin: 0;
-            padding: 0;
-            color-scheme: var(--tg-color-scheme);
+            color de fondo: var(--bg-color);
+            color: var(--tg-theme-text-color, # 222);
+            tamaño fuente: 14))px;
+            margen: 0;
+            acolchado: 0;
+            esquema de color: var(--tg-color-esquema);
         }
-        body.gray {
-            background-color: var(--tg-theme-secondary-bg-color, #efefef);
+ body.gray {
+            color de fondo: var(--tg-theme-secundary-bg-color, #efefef);
         }
 
         a {
-            color: var(--tg-theme-link-color, #2678b6);
+ color: var (--tg-theme-link-color, # 2678b6) ;
         }
-        .btn {
-            font-size: 14px;
-            padding: 10px 17px;
+ .btn {
+ tamaño de fuente: 14px ;
+ acolchado: 10px 17px ;
         }
-        .btn-primary {
-            background-color: var(--tg-theme-button-color, #50a8eb);
-            color: var(--tg-theme-button-text-color, #fff);
-            border: none;
+ .btn-primaria {
+ color de fondo: var (--tg-theme-button-color, # 50a8eb) ;
+ color: var (--tg-theme-button-text-color, #fff) ;
+ frontera: ninguno;
         }
 
         button {
@@ -135,75 +136,75 @@
             content: attr(data-placeholder);
             color: var(--tg-theme-hint-color, #ccc);
             padding: 0 20px;
-            font-weight: normal;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            pointer-events: none;
-            z-index: -1;
+ peso de fuente: normal;
+ espacio en blanco: ahora;
+ desbordamiento de texto: puntos suspensivos ;
+ desbordamiento: oculto;
+ eventos punteros: ninguno;
+ índice z: -1 ;
         }
-        section {
-            padding: 15px;
-            text-align: center;
-            background-color: var(--bg-color, #ffffff);
+ sección {
+ acolchado: 15px ;
+ texto-alinear: centro ;
+ color de fondo: var (--bg-color, #ffffff) ;
         }
-        section#top_sect {
-            background-color: var(--tg-theme-bg-color, #ffffff);
+ section # top_sect {
+ color de fondo: var (--tg-theme-bg-color, #ffffff) ;
         }
-        section#top_sect.second {
-            background-color: var(--tg-theme-secondary-bg-color, #efefef);
+ section # top_sect.second {
+ color de fondo: var (--tg-theme-secondary-bg-color, #efefef) ;
         }
-        section .sect_row {
-            margin: 10px 0;
+ section .sect_row {
+ margen: 10px 0 ;
         }
-        section + section {
-            padding: 0 15px 65px;
+ sección + sección {
+ acolchado: 0 15px 65px ;
         }
-        p {
-            margin: 40px 0 15px;
+ pags
+ margen: 40px 0 15px ;
         }
-        ul {
-            text-align: left;
+ ul {
+ texto-alinear: izquierda ;
         }
-        li {
-            color: var(--tg-theme-hint-color, #a8a8a8);
+ li {
+ color: var (--tg-theme-hint-color, # a8a8a8) ;
         }
-        textarea {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 7px;
+ textarea {
+ ancho: 100% ;
+ dimensionamiento de caja: borde-caja ;
+ acolchado: 7px ;
         }
-        pre {
-            background: rgba(0, 0, 0, .07);
-            color: var(--tg-theme-text-color, #222);
-            font-size: 12px;
-            border: none;
-            border-radius: 4px;
-            padding: 8px;
-            margin: 7px 0;
-            word-break: break-word;
-            white-space: pre-wrap;
-            text-align: left;
+ pre {
+ fondo: rgba (0, 0, 0, .07) ;
+ color: var (--tg-theme-text-color, # 222) ;
+ tamaño de fuente: 12px ;
+ frontera: ninguno;
+ radio fronterizo: 4px ;
+ acolchado: 8px ;
+ margen: 7px 0 ;
+ palabra-descanso: palabra de ruptura ;
+ espacio en blanco: pre-envoltura ;
+ texto-alinear: izquierda ;
         }
-        .dark pre {
-            background: rgba(255, 255, 255, .15);
+ .dark pre {
+ fondo: rgba (255, 255, 255, .15) ;
         }
-        .chat_img {
-            width: 30px;
-            border-radius: 15px;
-            margin-right: 10px;
+ .chat_img {
+ ancho: 30px ;
+ radio fronterizo: 15px ;
+ margen derecho: 10px ;
         }
-        .columns {
-            display: flex;
+ .columnas {
+ pantalla: flex ;
         }
         .columns>* {
-            flex-grow: 1;
+ crecimiento flexible: 1 ;
         }
-        .hint {
-            font-size: .8em;
-            color: var(--tg-theme-hint-color, #a8a8a8);
+ .pista {
+ tamaño de fuente: .8em ;
+ color: var (--tg-theme-hint-color, # a8a8a8) ;
         }
-        .ok {
+ .ok {
             color: green;
         }
         .err {
